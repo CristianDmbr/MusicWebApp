@@ -1,12 +1,7 @@
-div{
-    background-color: red;
-    width:100px;
-    height: 100px;
-    display: none;
-}
-span{
-    background-color: blue;
-    width:100px;
-    height: 100px;
-    display: none;
+body{
+    background-image: url(Images/Congradulations.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
