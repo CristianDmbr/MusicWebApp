@@ -1,40 +1,18 @@
-*{
-    box-sizing: border-box;
+.gallery{
+    display: inline-block;
+    border: 1px solid green;
+    margin: 10px;
+    width: 200px;
 }
-header{
-    background-color: lightgrey;
+.gallery .description{
+    padding: 10px;
     text-align: center;
-    padding: 25px;
 }
-.navbar{
-    background-color: black;
-    height: 50px;
-}
-aside{
-    width: 20%;
-    float: left;
-    padding: 10px;
-}
-section{
-    width: 40%;
-    float: left;
-    padding: 10px;
+.gallery:hover{
+    border: 2px solid red;
 }
 
-article{
-    width: 40%;
-    float: left;
-    padding: 10px;
-}
-footer{
-    clear: both;
-    display: block;
-    background-color: lightgrey;
-    text-align: center;
-    padding: 25px;
-}
-@media screen and (max-width:600px){
-    aside,section,article{
-        width: 100%;
-    }
+.gallery img{
+    width: 100%;
+    height: auto;
 }
