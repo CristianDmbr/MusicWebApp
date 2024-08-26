@@ -1,24 +1,27 @@
-.paging{
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
     text-align: center;
 }
-.paging  a{
-    text-decoration: none;
-    border: 5px;
-    padding: 20px;
-    display: inline-block;
-}
-.paging a.active{
-    background-color: rgb(164, 217, 164);
-    font: bold;
-    border-radius: 5px;
-}
-.paging a.active:active{
-    background-color: red;
-    color: white;
-    font: bold;
-    border-radius: 5px;
-}
-.paging a:hover:not(.active){
+.navbar a:hover{
+    color: green;
     background-color: grey;
-    border-radius: 5px;
+}
+
+.navbar li{
+    float: left;
 }
