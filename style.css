@@ -1,49 +1,22 @@
-#box{
-    width: 250px;
-    height: 250px;
-    background-color: rgb(168, 129, 129);
-    font-size: 13em;
+h1{
     text-align: center;
-    animation-name: colourChange;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: steps(6);
 }
-#box:hover{
-    animation-name: grow;
-    animation-duration: 10s;
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    overflow: hidden;
 }
-
-@keyframes slideLeft{
-    from{transform: translateX(300%);}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
 }
-@keyframes slideRight{
-    to{transform: translateX(300%);}
+.navbar li{
+    float: left;
 }
-@keyframes slideUp{
-    from{transform: translateY(300%);}
-}
-@keyframes slideDown{
-    to{transform: translateY(300%);}
-}
-@keyframes rotate{
-    100%{transform: rotateZ(360deg)}
-}
-@keyframes grow{
-    100%{transform: scale(3,3);}
-}
-@keyframes shrink{
-    100%{transform: scale(0.3,0.3);}
-}
-@keyframes fade{
-    50%{opacity: 0}
-}
-@keyframes colourChange{
-    0%{background-color: rgb(168, 129, 129)}
-    20%{background-color: orange}
-    40%{background-color: yellow}
-    60%{background-color: green}
-    80%{background-color: blue}
-    100%{background-color: purple}
+.navbar a:hover{
+    color: rgb(107, 97, 97);
+    background-color: green;
 }
