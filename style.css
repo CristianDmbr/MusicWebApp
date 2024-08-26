@@ -1,18 +1,49 @@
-.gallery{
-    display: inline-block;
-    border: 1px solid green;
-    margin: 10px;
-    width: 200px;
-}
-.gallery .description{
-    padding: 10px;
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(168, 129, 129);
+    font-size: 13em;
     text-align: center;
+    animation-name: colourChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: steps(6);
 }
-.gallery:hover{
-    border: 2px solid red;
+#box:hover{
+    animation-name: grow;
+    animation-duration: 10s;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;
+@keyframes slideLeft{
+    from{transform: translateX(300%);}
+}
+@keyframes slideRight{
+    to{transform: translateX(300%);}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%);}
+}
+@keyframes slideDown{
+    to{transform: translateY(300%);}
+}
+@keyframes rotate{
+    100%{transform: rotateZ(360deg)}
+}
+@keyframes grow{
+    100%{transform: scale(3,3);}
+}
+@keyframes shrink{
+    100%{transform: scale(0.3,0.3);}
+}
+@keyframes fade{
+    50%{opacity: 0}
+}
+@keyframes colourChange{
+    0%{background-color: rgb(168, 129, 129)}
+    20%{background-color: orange}
+    40%{background-color: yellow}
+    60%{background-color: green}
+    80%{background-color: blue}
+    100%{background-color: purple}
 }
