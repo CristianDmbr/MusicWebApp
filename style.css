@@ -1,22 +1,51 @@
+* {
+    box-sizing: border-box;
+}
 h1{
     text-align: center;
+    text-decoration: underline;
 }
 .navbar ul{
-    list-style-type: none;
     background-color: black;
     padding: 0px;
+    margin : 0px;
     overflow: hidden;
+    list-style-type: none;
 }
 .navbar a{
     color: white;
     text-decoration: none;
-    display: block;
-    padding: 15px;
 }
 .navbar li{
+    text-align: center;
+    padding: 15px;
     float: left;
 }
 .navbar a:hover{
-    color: rgb(107, 97, 97);
+    color: yellow;
+}
+.navbar li:hover{
     background-color: green;
+}
+aside{
+    width: 20%;
+    float: left;
+}
+section{
+    width: 80%;
+    float: left;
+}
+footer{
+    clear: both;
+    text-align: center;
+    background-color: grey;
+    height: 30px;
+    width: 900px;
+    margin: 20px;
+}
+#personal{
+    text-decoration: underline;
+}
+#artists{
+    text-decoration: underline;
 }
