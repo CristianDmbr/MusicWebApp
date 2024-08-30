@@ -1,7 +1,17 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-image: url(Images/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 h1{
+    text-align: center;
+}
+#homeTitle{
     text-align: center;
     text-decoration: underline;
     text-shadow: 5px 5px 5px;
@@ -65,7 +75,16 @@ footer{
     border: 5px solid rgb(164, 156, 156);    
     margin: 10px;
     width: 200px;
+    background-color: rgb(167, 162, 162);
 }
 .gallery img{
     width: 200px;
+}
+.gallery img:hover{
+    border: 5px solid green;
+}
+@media screen and (max-width:600px){
+    aside,section,article{
+        width: 100%;
+    }
 }
